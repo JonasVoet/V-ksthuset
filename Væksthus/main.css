@@ -1,0 +1,469 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #f0f0f1;
+
+}
+
+/*header*/
+
+
+wrapper {
+    width: 100%;
+    display: flex;
+
+
+}
+
+header{
+    position: relative; 
+    
+}
+
+
+
+
+.logo {
+    width: 15%;
+/*    height: 90px;*/
+   
+}
+
+
+div.container {
+    margin-left: 15%;
+    max-width: 70%;
+    height: 100px;
+    background-color: #f0f0f1;
+    padding-bottom: 2%;
+
+}
+
+nav {
+    width: 100%;
+    /*    padding-left: 15%;*/
+    /*    height: 50px; */
+
+}
+
+i.fa-bars{
+    cursor: pointer; 
+    font-size: 45px; 
+    display: block;
+    position: absolute; 
+    z-index: 2000; 
+}
+
+nav ul {
+    padding-top: 0.7%;
+    list-style: none;
+    text-align: center;
+    background-image: linear-gradient(to right top, #00691b, #005f1a, #005519, #004b18, #004116, #004a19, #00541b, #005d1d, #007e21, #00a123, #00c420, #00e914);
+/*    height: 40px;*/
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin-left: 2%;
+    position: relative;
+    margin-bottom: 1%; 
+    
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+
+
+
+
+
+}
+
+nav a:hover {
+    color: black;
+     
+
+}
+
+nav a:before {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #035803;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+
+    position: absolute;
+    top: -50%;
+
+
+}
+
+nav a:hover:before {
+    /*    tager width af a*/
+    width: 100%;
+
+
+
+}
+
+/*main*/
+
+
+/*scrollbar----------------*/
+::-webkit-scrollbar {
+    width: 10px;
+    
+
+
+
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #153e00;
+    border-radius: 3px;
+
+
+}
+
+::-webkit-scrollbar-track {
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+main div.box {
+    width: 70%;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 6.5%;
+    box-shadow: 0px 0px 10px grey;
+
+    background-image: url(img/forsidebillede.JPG);
+    background-size: cover;
+
+
+
+}
+
+div.front i.fas {
+    position: absolute;
+    right: 0.3%;
+    bottom: 165.6%;
+    color: grey;
+    z-index: 100;
+    font-size: 13px;
+
+
+
+}
+
+div.front h1 {
+    position: relative;
+    border-bottom: 1px solid black;
+    font-family: 'Spectral', serif;
+    text-align: left;
+
+
+}
+
+    {
+    font-weight: 900;
+    margin-top: 100%:
+}
+
+form{
+    position: relative; 
+}
+
+input {
+    position: absolute;
+    bottom: 150%;
+    right: 0%;
+
+}
+
+
+main .container-box {
+    max-width: 70%;
+    margin-left: 14.7%;
+    margin-top: 0.7%;
+    background-color: #f0f0f1; 
+    
+   
+  
+}
+
+main figure {
+    width: 33.33%;
+    margin: 0 auto;
+    padding-top: 2%;
+
+    
+
+}
+
+main .padding-box img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    
+
+
+}
+
+.padding-box {
+    position: relative;
+    padding-top: 60%;
+    padding-left: 2%;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f0f1;
+    
+    
+    
+}
+
+
+main .padding-box:hover img {
+    transform: scale(1.4);
+    
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+
+p {
+    
+    text-align: center;
+}
+
+.footerbox {
+    width: 100%;
+    
+
+
+
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 70%;
+    height: 200px;
+    border-top: 5px solid grey;
+
+}
+
+footer h4 {
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 0.2%;
+}
+
+footer ul li {
+    list-style-type: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+.footer{
+    width: 33%; 
+    
+}
+
+
+h3{
+    margin-left: 20%;
+}
+
+
+
+table th{
+    font-size: 16px;   
+}
+
+table #th{
+       padding-right: 5%;
+}
+
+table td{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;  
+   
+}
+
+div.mapouter { 
+    text-align: right;
+    height: 165px;
+    width: 271px;
+    margin-left: 8%;
+    
+}
+
+/*Responsivt*/
+
+/*computer*/
+
+@media only screen and (min-width: 769px){
+    i.fa-bars{
+        display: none; 
+    }
+    
+}
+
+/*tablet*/
+
+@media only screen and (max-width: 768px){
+    form{
+        display: none; 
+    }
+    i.fa-bars{
+        display: none;
+    }
+    .logo{
+        width: 30%; 
+    }
+    
+    
+}
+
+/*mobil*/
+@media only screen and (min-width: 1px) and (max-width: 435px){
+    form{
+        display: none; 
+    }
+    
+    i.fa-bars{
+        display: block; 
+    }
+    
+    .logo{
+        width: 70%; 
+    }
+    
+    .footer img{
+    width: 30%;    
+    
+}
+    
+    main figure{
+        width: 100%; 
+    }
+    
+    div.mapouter{
+        width: 100%; 
+    }
+    
+    .footer{
+        width: 100%; 
+    }
+    
+    
+  
+}
+
+/*mindre mobil*/
+@media only screen and (min-width: 1px) and (max-width: 347px){
+    .front h1{
+        width: 200%;
+    }
+    
+     h2{
+        display: block; 
+    }
+    
+     p{
+          
+    }
+    
+    
+    
+ 
+}
+
+/* Burger */
+@media only screen and (min-width: 1px) and (max-width: 510px){
+    i.fa-bars{
+        display: block; 
+        
+    }
+    
+    header nav{
+        position: absolute;
+        right: -76%;
+        top: 10%; 
+        
+    }
+    header nav ul{
+        position: absolute;
+        top: 0%;
+        transform: translateY(-150%);
+        transition: 1s;
+        
+
+    
+    }
+     header nav.show ul{
+        transform: translateY(0%);
+         left: -10%;
+         top: 50px;
+         display: block;
+         background-image: linear-gradient(to right top, #00691b, #005f1a, #005519, #004b18, #004116, #004a19, #00541b, #005d1d, #007e21, #00a123, #00c420, #00e914); 
+         width: 30%; 
+         z-index: 1000; 
+        
+    }
+    
+    header nav ul li{
+        width: 100%; 
+    }
+
+
+    
+    
+
+

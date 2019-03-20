@@ -1,0 +1,538 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #f0f0f1;
+    background-image: url(img/background.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    
+
+}
+
+/*header*/
+
+
+wrapper {
+    
+    
+    
+
+
+}
+
+header{
+    position: relative; 
+    
+}
+
+
+
+
+.logo {
+    width: 15%;
+/*    height: 90px;*/
+   
+}
+
+
+div.container {
+    margin-left: 15%;
+    width: 70%;
+    height: 100px;
+    padding-bottom: 2%;
+
+}
+
+nav {
+    width: 100%;
+    /*    padding-left: 15%;*/
+    /*    height: 50px; */
+
+}
+
+i.fa-bars{
+    cursor: pointer; 
+    font-size: 45px; 
+    display: block;
+    position: absolute; 
+    z-index: 2000; 
+}
+
+nav ul {
+    padding-top: 0.7%;
+    list-style: none;
+    text-align: center;
+    background-image: linear-gradient(to right top, #00691b, #005f1a, #005519, #004b18, #004116, #004a19, #00541b, #005d1d, #007e21, #00a123, #00c420, #00e914);
+/*    height: 40px;*/
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin-left: 2%;
+    position: relative;
+    margin-bottom: 1%; 
+    
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+
+
+
+
+
+}
+
+nav a:hover {
+    color: black;
+     
+
+}
+
+nav a:before {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #035803;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+
+    position: absolute;
+    top: -50%;
+
+
+}
+
+nav a:hover:before {
+    /*    tager width af a*/
+    width: 100%;
+
+
+
+}
+
+div.front i.fas {
+    position: absolute;
+    right: 0.3%;
+    bottom: 165.6%;
+    color: grey;
+    z-index: 100;
+    font-size: 13px;
+
+
+
+}
+
+/*-------------------------Main-------------------------------------------*/
+
+main{
+    
+}
+
+
+
+
+
+section.gallery-main{
+    
+    width: 70%; 
+    display: flex;
+    justify-content: center;
+
+    
+ 
+
+}
+
+.gallery-main-item{
+    padding: 4%; 
+}
+
+.gallery-main-image{
+    padding-top: 6%;
+    width: 70%;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.gallery-main figure img{
+    width: 100%; 
+    margin: 0 auto; 
+    
+    
+}
+
+
+section.gallery{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+figure.gallery-item{ 
+    padding: 1%;
+    
+}
+
+.gallery-image{
+    width: 100%;
+    display: block; 
+    border: 3px solid black; 
+}
+
+/*------------------ligtbox----------------------*/
+
+
+
+/*Styling af lightbox*/
+
+
+.lightbox-target{
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    opacity: 0;
+    opacity: .5s ease-in-out;
+    overflow: hidden; 
+}
+
+/*styler lightbox billede*/
+
+.lightbox-target img{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white; 
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    transition: .5s ease-in-out;
+}
+
+/*styler knappen der lukker lightbox*/
+
+a.lightbox-close{
+    display: block;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 13.8%;
+    transition: .5s ease-in-out;
+}
+
+/*laver det lille X i hjørnet*/
+
+a.lightbox-close:before{
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 27px;
+    top: 10px;
+    transform: rotate(45deg);
+}
+
+a.lightbox-close:after{
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    transform: rotate(-45deg); 
+}
+
+/*bruger pseudo selector til at lave animation når man klikker på achor*/
+
+.lightbox-target:target{
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    
+}
+
+.lightbox-target:target img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close{
+    top: 0px; 
+}
+
+
+/*---------------lightbox slut---------------*/
+
+
+
+
+/*main slut-------------------------------------------------*/
+
+
+
+}
+
+div.front i.fas {
+    position: absolute;
+    right: 0.3%;
+    bottom: 165.6%;
+    color: grey;
+    z-index: 100;
+    font-size: 13px;
+
+
+
+}
+
+div.front h1 {
+    position: relative;
+    border-bottom: 1px solid black;
+    font-family: 'Spectral', serif;
+    text-align: left;
+
+
+}
+
+   
+form{
+    position: relative; 
+}
+
+input {
+    position: absolute;
+    bottom: 150%;
+    right: 0%;
+
+}
+
+
+
+.footerbox {
+    width: 100%;
+    
+
+
+
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 70%;
+    height: 200px;
+    border-top: 5px solid black;
+
+}
+
+footer h4 {
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 0.2%;
+}
+
+footer ul li {
+    list-style-type: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+.footer{
+    width: 33%; 
+    
+}
+
+
+h3{
+    margin-left: 20%;
+}
+
+
+
+table th{
+    font-size: 16px;   
+}
+
+table #th{
+       padding-right: 5%;
+}
+
+table td{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;  
+   
+}
+
+div.mapouter { 
+    text-align: right;
+    height: 165px;
+    width: 271px;
+    margin-left: 8%;
+    
+}
+
+/*Responsivt*/
+
+/*computer*/
+
+@media only screen and (min-width: 769px){
+    i.fa-bars{
+        display: none; 
+    }
+    
+}
+
+/*tablet*/
+
+@media only screen and (max-width: 768px){
+    form{
+        display: none; 
+    }
+    i.fa-bars{
+        display: none;
+    }
+    .logo{
+        width: 30%; 
+    }
+    
+    
+}
+
+/*mobil*/
+@media only screen and (min-width: 1px) and (max-width: 435px){
+    form{
+        display: none; 
+    }
+    
+    i.fa-bars{
+        display: block; 
+    }
+    
+    .logo{
+        width: 70%; 
+    }
+    
+    .footer img{
+    width: 30%;    
+    
+}
+    
+    main figure{
+        width: 100%; 
+    }
+    
+    div.mapouter{
+        width: 100%; 
+    }
+    
+    .footer{
+        width: 100%; 
+    }
+    
+    
+  
+}
+
+/*mindre mobil*/
+@media only screen and (min-width: 1px) and (max-width: 347px){
+    .front h1{
+        width: 200%;
+    }
+    
+     h2{
+        display: block; 
+    }
+    
+     p{
+          
+    }
+    
+    
+    
+ 
+}
+
+/* Burger */
+@media only screen and (min-width: 1px) and (max-width: 510px){
+    i.fa-bars{
+        display: block; 
+        
+    }
+    
+    header nav{
+        position: absolute;
+        right: -76%;
+        top: 10%; 
+        
+    }
+    header nav ul{
+        position: absolute;
+        top: 0%;
+        transform: translateY(-150%);
+        transition: 1s;
+        
+
+    
+    }
+     header nav.show ul{
+        transform: translateY(0%);
+         left: -10%;
+         top: 50px;
+         display: block;
+         background-image: linear-gradient(to right top, #00691b, #005f1a, #005519, #004b18, #004116, #004a19, #00541b, #005d1d, #007e21, #00a123, #00c420, #00e914); 
+         width: 30%; 
+         z-index: 1000; 
+        
+    }
+    
+    header nav ul li{
+        width: 100%; 
+    }
+
+
+    
+    
+
+
